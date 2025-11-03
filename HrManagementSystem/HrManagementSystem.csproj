@@ -46,6 +46,7 @@
 	<ItemGroup>
 		<Folder Include="Features\LocationManagement\CountryManagement\Common\" />
 		<Folder Include="Features\LocationManagement\StateManagement\UpdateState\" />
+		<Folder Include="Features\OnBoardingManagement\Validators\" />
 	</ItemGroup>
 
 </Project>

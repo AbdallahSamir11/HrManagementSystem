@@ -34,6 +34,11 @@ namespace HrManagementSystem.Common.Repositories
             await _dbSet.AddAsync(entity, cancellationToken);
         }
 
+        public async Task AddRangeAsync(IEnumerable<Entity> entities , CancellationToken cancellationToken)
+        {
+            await _dbSet.AddRangeAsync(entities , cancellationToken);
+        }
+
         // --------------------- Delete ---------------------
 
         public async Task DeleteFromAsync(Expression<Func<Entity, bool>> expression, string currentUserId, CancellationToken cancellationToken)

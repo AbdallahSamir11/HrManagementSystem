@@ -13,6 +13,7 @@ namespace HrManagementSystem.Common.Repositories
         // --------------------- Add ---------------------
         Task AddAsync(Entity entity, CancellationToken cancellationToken);
         Task AddAsync(Entity entity, string currentUserId, CancellationToken cancellationToken);
+        Task AddRangeAsync(IEnumerable<Entity> entities, CancellationToken cancellationToken);
 
         // --------------------- Update ---------------------
         void Update(Entity entity);
